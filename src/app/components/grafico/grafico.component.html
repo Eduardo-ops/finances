@@ -1,0 +1,19 @@
+<h1 class="graphTitle">Gráfico Receita/Despesa Mensal</h1>
+<div class="container">
+  <div class="column-container" *ngFor="let item of graficoData">
+    <div class="column-container" *ngIf="item.label === 'null'">
+      <div class="column" [ngStyle]="{'height.%': 0}"><span></span></div>
+
+      <div class="column" [ngStyle]="{'height.%': 0}"><span></span></div>
+    </div>
+
+
+    <div class="column" [ngStyle]="{'height.%': item.barra1}"><span>{{item.rec | currency: 'BRL'}}</span></div>
+
+    <div class="column" [ngStyle]="{'height.%': item.barra2}"><span>{{item.des | currency: 'BRL'}}</span></div>
+
+    <span class="column-value">{{ item.label }}</span>
+
+
+  </div>
+</div>

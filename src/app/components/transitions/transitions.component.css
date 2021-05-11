@@ -1,0 +1,138 @@
+.fields{
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    align-items: flex-end;
+}
+
+.fields > div {
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.fields label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.fields input, .fields select {
+    padding: 6px 3px;
+    border: 0;
+    border-bottom: 1px solid #0005;
+    background-color: transparent;
+}
+
+.fields input[type="submit"] {
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #0002;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 8px;
+    background: rgb(31,32,237);
+background: linear-gradient(169deg, rgba(31,32,237,0.5606617647058824) 48%, rgba(38,49,247,0.5970763305322129) 53%, rgba(0,212,255,0.7959558823529411) 100%);
+}
+
+.fields input[type="submit"]:hover {
+    box-shadow: 3px 3px 5px #0004;
+}
+
+
+.receita {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    background: rgb(44,255,0);
+background: linear-gradient(169deg, rgba(44,255,0,0.7959558823529411) 42%, rgba(1,213,0,0.5606617647058824) 67%);
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    padding: 12px;
+}
+.receita>label{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.despesa {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    background: rgb(232,7,7);
+background: linear-gradient(180deg, rgba(232,7,7,0.47942927170868344) 0%, rgba(240,6,6,0.6418942577030813) 13%, rgba(252,69,69,1) 35%);
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    padding: 12px;
+}
+.despesa>label{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.saldo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #faad14;
+    border-radius: 10px;
+    width: 150px;
+    height: 90px;
+    padding: 12px;
+}
+.saldo>label{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.num {
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+.showValues {
+    display: flex;
+    place-content: space-between;
+    padding: 32px;
+}
+
+.table-container {
+    padding: 32px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 1px solid #0005;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.col-despesa {
+    border-right: 8px solid #e01e37;
+}
+
+.col-receita {
+    border-right: 8px solid #38b000;
+   
+}
+.graph-container {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.col {
+    flex: 1;
+}
